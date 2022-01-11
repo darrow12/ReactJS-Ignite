@@ -19,3 +19,4 @@ export function RepositoryItem(props) {
 
 
 // Resumo do conceito de propriedades: a forma de conseguir passar informações de um componente pai/mãe pros componentes filhos
+// Triade dos conhecimentos importantes do React: Componentes, Propriedades e Estado
