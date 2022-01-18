@@ -2,12 +2,12 @@
 export function RepositoryItem(props) {
   return (
     <li>
-    <strong>{props.repository.name ?? 'Default'}</strong>
+    <strong>{props.repository.name}</strong>
     {/* Caso o repositório esteja vazio, coloque um nome 'default' para todos que não tem | isso desconsidera que o 0 é um valor inválido | o sinal || (ou) também funciona */}
     {/* Caso não queira fazer daquele jeito de colocar o repository nos 4, é só colocar aqui: props.repository?.name ?? 'Default' | Ele vai verificar se o repository tá nulo ou nao, caso estiver, ele nem procura pelo nome e retorna logo o default*/}
     <p>{props.repository.description}</p>
 
-    <a href={props.repository.link}>
+    <a href={props.repository.html_url}>
       Acessar repositório
     </a>
   </li>
