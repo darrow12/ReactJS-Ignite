@@ -13,14 +13,16 @@
     return `Hello ${user}, welcome to the app. Your e-mail is ${user.email}. Your city is ${user.address.city}, and you state is ${user.address.state}`;
   }
 
-  showWelcomeMessage({
+  const user = {
     name: 'John',
     email: 'email@john.com',
     address: {
       city: 'São Paulo',
       state: 'SP'
     }
-  });
+  }
+
+  showWelcomeMessage(user);
 
   /* 
   Quando vamos fazer uma alteração no código, ou utilizar de uma variável, ou chamar uma função, a gente não sabe exatamente qual é o formato das informações que tem ali dentro. O user ali em cima, pode ser qualquer coisa. Se colocar showWelcomeMessage('quejo');, ele não vai dar erro, porque o JS permite fazer por conta da tipagem dinâmica.
